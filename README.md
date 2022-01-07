@@ -173,6 +173,25 @@ public class xbootPwdEncode implements PasswordEncoder {
 
 ![image](https://user-images.githubusercontent.com/16593068/148507655-80404c59-cfad-464f-97ac-a93f894a03c4.png)
 
+```
+$2a$10$7PocfErZodpsp8rK7j8nv.RK1Hn783EyU2YIowuTZkPQdjatp9riK
+\__/\/ \____________________/\_____________________________/
+Alg Cost      Salt                        Hash
+```
+
+```python
+
+>>> "$2a$10$7PocfErZodpsp8rK7j8nv.RK1Hn783EyU2YIowuTZkPQdjatp9riK"[0:3]
+'$2a'
+>>> "$2a$10$7PocfErZodpsp8rK7j8nv.RK1Hn783EyU2YIowuTZkPQdjatp9riK"[3:6]
+'$10'
+>>> "$2a$10$7PocfErZodpsp8rK7j8nv.RK1Hn783EyU2YIowuTZkPQdjatp9riK"[6:29]
+'$7PocfErZodpsp8rK7j8nv.'
+>>> "$2a$10$7PocfErZodpsp8rK7j8nv.RK1Hn783EyU2YIowuTZkPQdjatp9riK"[29:60]
+'RK1Hn783EyU2YIowuTZkPQdjatp9riK'
+>>>
+```
+
 参考链接：https://en.wikipedia.org/wiki/Bcrypt
 
 ```
