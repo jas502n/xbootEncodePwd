@@ -171,3 +171,13 @@ public class xbootPwdEncode implements PasswordEncoder {
 
 ```
 
+![image](https://user-images.githubusercontent.com/16593068/148507655-80404c59-cfad-464f-97ac-a93f894a03c4.png)
+
+参考链接：https://en.wikipedia.org/wiki/Bcrypt
+
+```
+$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy
+\__/\/ \____________________/\_____________________________/
+Alg Cost      Salt                        Hash
+```
+
